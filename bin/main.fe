@@ -1,0 +1,16 @@
+(load_textures "data/atlas.png" 5 5)
+
+(= x 0)
+(= y 0)
+(= sz 128)
+
+(print "Hello")
+
+(= tick (fn (dt)
+  (= x (lerp x (- WIDTH sz) 0.5 dt))
+  (= y (lerp y (- WIDTH sz) 0.5 dt))
+  (rect x y sz sz 0 0)
+  (rect 32 32 sz sz 0 0)
+  (rect 64 y sz sz 0 0)
+))
+

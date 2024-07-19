@@ -1,0 +1,3 @@
+(= card:draw (fn (x y val suit)
+  (rect x y (/ WIDTH 10) (/ WIDTH 10) 0 0)
+))
